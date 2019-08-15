@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Bricks
+        </title>
+        <style> 
+        body{
+            background-color: #ff6600;
+        }
+        #gameScreen{
+            display: block;
+            margin: 55 auto;
+            border: 3px solid #000000;
+            background-color: #ff9966
+        }
+
+        #ball_img, #brick_img, #paddle_img{
+            display: none;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <img id="ball_img" src="images/myBall.png">
+        <img id="paddle_img" src="images/paddle.png">
+        <img id="brick_img" src="images/brick.png">
+        <canvas id="gameScreen" width="800" height="600"></canvas>
+
+        <script src="src/detectCollision.js" type="text/javascript"></script>
+        <script src="src/level.js" type="text/javascript"></script>
+        <script src="src/brick.js" type="text/javascript"></script>
+        <script src="src/ball.js" type="text/javascript"></script>
+        <script src="src/input.js" type="text/javascript"></script>
+        <script src="src/paddle.js" type="text/javascript"></script>
+        <script src="sketch.js" type="text/javascript"></script>
+       
+    </body>
+</html>
